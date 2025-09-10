@@ -1,1 +1,7 @@
-# NewRepo
+Jag har utvecklat en webbapplikation med ASP.NET Core som ramverk. Applikationen körs i en isolerad container och är integrerad med en SQL Server-databas som ligger i en separat container. På applikationens startsida finns en länk till en Todo-sida, där användare kan skapa, hantera och visa uppgifter.
+
+För att kunna starta och köra applikationen krävs Docker Desktop. Projektet kan hämtas via GitHub och startas med kommandot docker compose up --build. Därefter är applikationen tillgänglig på http://localhost:8080.
+
+Valet av teknologier inkluderar ASP.NET Core för applikationslogik, SQL Server som databashanterare samt Entity Framework Core för att hantera databaskommunikationen. Containerteknologi, i kombination med Docker Compose, används för att orkestrera och köra applikationens olika komponenter. Projektet finns tillgängligt på GitHub, där version 1.0 utgör den initiala releasen och version 2.0 introducerar Todo-sidan samt en uppdaterad README-fil.
+
+Containrar erbjuder ofta både kostnads- och prestandefördelar jämfört med traditionella virtuella maskiner. Som exempel kostar drift av två små containrar på Azure cirka 350–400 SEK per månad, medan motsvarande konfiguration med två virtuella maskiner ligger runt 500–600 SEK. För lagring av 25 GB beräknas kostnaden till cirka 30–40 SEK vid två veckors aktiv lagring och cirka 20 SEK vid sex månaders arkivering. Detta illustrerar att containrar är mer kostnadseffektiva, särskilt när data som inte längre behöver snabb åtkomst kan flyttas till arkivlagring.
